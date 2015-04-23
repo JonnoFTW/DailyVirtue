@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="au.com.virtueoftheday.virtuedaily.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:background="#0099CC" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="33dp"
+            android:paddingRight="33dp"
+            android:paddingStart="33dp"
+            android:paddingTop="33dp"
+            android:layout_height="wrap_content"
+            android:text="@string/virtue"
+            android:textSize="33sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        android:padding="33dp"
+        android:textSize="20sp"
+        android:paddingLeft="33dp"
+        android:paddingRight="33dp"
+        android:paddingStart="33dp"
+        android:text="@string/description" />
+
+</LinearLayout>
