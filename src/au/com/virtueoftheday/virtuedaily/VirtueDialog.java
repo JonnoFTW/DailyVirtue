@@ -6,6 +6,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.DialogInterface.OnDismissListener;
 import android.os.Bundle;
 import au.com.virtueoftheday.virtuedaily.database.VirtueDatabase;
 
@@ -36,7 +37,7 @@ public class VirtueDialog extends Activity {
 				dialog.dismiss();
 				finish();
 			}
-		}).create().show();
+		}).setCancelable(false).create().show();
 		
 	
 	}
